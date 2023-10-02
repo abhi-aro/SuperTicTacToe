@@ -1,0 +1,79 @@
+.board {
+	--square-length: 200px;
+	--square-border: 2px solid black;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 100%;
+	width: 100%;
+}
+
+.square {
+	height: var(--square-length);
+	width: var(--square-length);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	pointer-events: none;
+	background-color: rgb(51, 51, 51, 0.5);
+}
+
+.activeSquare {
+	pointer-events: all;
+	background-color: #fff;
+}
+
+.row1 .square:nth-child(1) {
+	border-right: var(--square-border);
+	border-bottom: var(--square-border);
+}
+
+.row1 .square:nth-child(2) {
+	border-top: var(--square-border);
+	border-right: var(--square-border);
+	border-bottom: var(--square-border);
+}
+
+.row1 .square:nth-child(3) {
+	border-top: var(--square-border);
+	border-right: var(--square-border);
+}
+
+.row2 .square:nth-child(1) {
+	border-left: var(--square-border);
+	border-right: var(--square-border);
+	border-bottom: var(--square-border);
+}
+
+.row2 .square:nth-child(2) {
+	border-top: var(--square-border);
+	border-left: var(--square-border);
+	border-right: var(--square-border);
+	border-bottom: var(--square-border);
+}
+
+.row2 .square:nth-child(3) {
+	border-top: var(--square-border);
+	border-left: var(--square-border);
+	border-right: var(--square-border);
+}
+
+.row3 .square:nth-child(1) {
+	border-left: var(--square-border);
+	border-bottom: var(--square-border);
+}
+
+.row3 .square:nth-child(2) {
+	border-top: var(--square-border);
+	border-left: var(--square-border);
+	border-bottom: var(--square-border);
+}
+
+.row3 .square:nth-child(3) {
+	border-top: var(--square-border);
+	border-left: var(--square-border);
+}

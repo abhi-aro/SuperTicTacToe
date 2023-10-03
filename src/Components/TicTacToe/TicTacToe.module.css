@@ -20,24 +20,24 @@
 }
 
 .square[data-square-value="X"] {
-	background-image: url("./PlayerIcons/X.png");
+	background-image: url("/PlayerIcons/X.png");
 	background-size: 50px;
 	pointer-events: none;
 }
 
 .square[data-square-value="O"] {
-	background-image: url("./PlayerIcons/O.png");
+	background-image: url("/PlayerIcons/O.png");
 	background-size: 50px;
 	pointer-events: none;
 }
 
 .square[data-current-player="X"]:hover {
-	background-image: url("./PlayerIcons/X.png");
+	background-image: url("/PlayerIcons/X.png");
 	background-size: 50px;
 }
 
 .square[data-current-player="O"]:hover {
-	background-image: url("./PlayerIcons/O.png");
+	background-image: url("/PlayerIcons/O.png");
 	background-size: 50px;
 }
 
